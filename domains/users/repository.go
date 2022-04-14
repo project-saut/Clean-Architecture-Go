@@ -1,6 +1,6 @@
 package users
 
-type UserRepostory interface{
+type UserRepository interface {
 	CreateUser(user User) error
 	GetAllUser() []User
 	GetUserById(id int) (User, error)

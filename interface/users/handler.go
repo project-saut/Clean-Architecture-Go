@@ -9,10 +9,10 @@ import (
 )
 
 type handler struct {
-	repository model.UserRepostory
+	repository model.UserRepository
 }
 
-func NewUserHandler(repo model.UserRepostory) model.UserHandler {
+func NewUserHandler(repo model.UserRepository) model.UserHandler {
 	return &handler{
 		repository: repo,
 	}
