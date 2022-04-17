@@ -5,5 +5,8 @@ import "Belajar-Go-Echo/infrastructure/http/server"
 func main() {
 	app := server.Server()
 
-	app.Start(":8080")
+	err := app.Start(":8080")
+	if err != nil {
+		return
+	}
 }
